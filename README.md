@@ -18,3 +18,5 @@ Juntamente com a definição do público alvo, criar estratégias criativas ajud
 
 Através da compilação de conteúdos obtidos em resultados de buscas dentro do Stack Overflow trazemos uma forma simples de realizar a implementação.
 
+Seguem as instruções para implementar:
+https://github.com/alanmazzilli/share-to-pinterest-from-your-email-marketing/blob/master/instructions.md
