@@ -1,0 +1,41 @@
+####customs
+alias poi="sudo apt update && sudo apt upgrade -y && sudo apt autoremove && sudo apt autoclean"
+
+##apache
+#turn on apache server
+alias goapache="sudo systemctl start apache2.service"
+#turn off apache server
+alias noapache="sudo systemctl stop  apache2.service"
+#reboot apache server
+alias againapache="sudo systemctl restart apache2.service"
+
+#version
+alias ver="cat /etc/os-release"
+
+#esquenta tela
+alias esquenta="gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 3000"
+alias esquentamais="gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 1000"
+alias esfria="gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 4000"
+alias esfriamais="gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 5500"
+
+#3 horas de senha no git
+alias timegit="git config credential.helper 'cache --timeout 10800'"
+
+#pasta do git
+alias cdgit="cd farms/PROJECTS/"
+
+#lazy_bluetooth
+alias dbt="sudo rmmod ohci-pci && sudo rmmod btusb"
+alias obt="sudo modprobe btusb && sudo modprobe ohci-pc"
+alias ubt="sudo modprobe ohci-pci && sudo modprobe btusb"
+alias mbt="dbt && sudo modprobe btusb && sudo modprobe ohci-pci"
+alias pbt="dbt; sleep 5; ubt"
+
+#acorda rede
+alias upnet="sudo rmmod r8169; sleep 3; sudo modprobe r8169"
+
+#combo
+alias combo="upnet; pbt; poi"
+
+#Remember source ~/.bashrc
+
